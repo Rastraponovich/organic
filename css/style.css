@@ -53,7 +53,7 @@ h2,
 h3,
 span,
 p{
-    text-wrap: anywhere;
+    word-wrap: anywhere;
 }
 body{
     margin: 0 auto;
