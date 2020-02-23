@@ -53,7 +53,7 @@ h2,
 h3,
 span,
 p{
-    text-wrap: anywhere;
+    word-wrap: anywhere;
 }
 body{
     margin: 0 auto;
@@ -113,7 +113,6 @@ body{
     border: 1px solid #fcdb5a;
     color: #fcdb5a;
     fill: #fcdb5a;
-
 }
 .header-logo:active{
     opacity: .67;
@@ -177,7 +176,6 @@ body{
 .header-btn:active{
     opacity: .67;
 }
-
 .main-block{
     padding: 300px 110px 106px 110px;
     background-image: url("../img/main-bg.jpg");
@@ -193,7 +191,6 @@ body{
     color: #fff;
     max-width: 521px;
 }
-
 .block-links-gallery{
     display: flex;
 }
@@ -203,7 +200,6 @@ body{
     margin: 0 0 0 0;
 }
 .block-image{
-
 }
 .block-gallery-link{
     font-family: 'Raleway', sans-serif;
@@ -218,7 +214,6 @@ body{
 .block-gallery-link-center-text:hover{
     text-decoration: underline;
 }
-
 .main-block-small-link{
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +229,6 @@ body{
 .thin{
     font-weight: 100;
     width: 100%;
-
 }
 .block-gallery-link-clean{
     margin: 84px 80px 0 90px;
@@ -247,9 +241,7 @@ body{
     color: #fcdb5a;
 }
 .block-gallery-link-center-text{
-
 }
-
 .promo{
     padding: 78px 216px 0 222px;
 }
@@ -257,7 +249,6 @@ body{
     margin: 0 0 0 0;
     position: relative;
     display: flex;
-
 }
 .promo-img-1{
     z-index: 1;
@@ -284,7 +275,6 @@ body{
     z-index: 3;
 }
 .promo-text span{
-
 }
 .promo__c2 {
     color: #db2985;
@@ -371,7 +361,6 @@ body{
     width: 100%;
     text-align: center;
     display: block;
-
 }
 .discover-block{
     background-image: url('../img/discover-bg.jpg');
@@ -724,7 +713,6 @@ body{
 .footer{
     display: flex;
 }
-
 .footer-main{
     padding: 77px 102px 0 214px;
     background-color: #333;
