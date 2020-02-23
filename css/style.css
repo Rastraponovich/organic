@@ -49,15 +49,12 @@
     font-weight: 400;
     src: url("../fonts/Storytella.otf")format('opentype');
 }
-
-
-
-
-
-
-
-
-
+h2,
+h3,
+span,
+p{
+    text-wrap: anywhere;
+}
 body{
     margin: 0 auto;
     width: 1600px;
@@ -65,10 +62,9 @@ body{
     position: relative;
 }
 .header{
-    padding: 0 286px 0 215px;
+    padding: 34px 215px 28px 215px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
     position: absolute;
     left: 0;
@@ -80,14 +76,17 @@ body{
     display: block;
     height: 1px;
     width: 100%;
-    opacity: 1;
+    opacity: .12;
     background-color: #fff;
     position: absolute;
     left: 0;
-    bottom: 23px;
+    bottom: 0;
+}
+.header .header-logo{
+    position: absolute;
+    top: 0;
 }
 .header-logo{
-    margin: 0 69px 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -120,30 +119,40 @@ body{
     opacity: .67;
 }
 .header-nav{
+    margin: 0 0 0 169px;
     flex-grow: 1;
     display: flex;
+    align-items: center;
 }
 .header-nav-link{
     display: block;
-    margin: 0 25px 0 0;
+    margin: 0 30px 0 0;
     font-size: 14px;
-    line-height: 20px;
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
+    position: relative;
 }
 .header-nav-link:last-child{
     margin: 0 0 0 0;
 }
 .header-nav-link:after{
+    margin: 39px 0 0 0;
+    opacity: 0;
     display: block;
     content: '';
     height: 2px;
     background-color: #fcdb5a;
     width: 100%;
+    position: absolute;
+    transition: opacity .3s;
+}
+.header-nav-link:hover:after{
+    opacity: 1;
 }
 .header-btn{
+    align-self: center;
     padding: 15px 35px 15px 35px;
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
@@ -172,10 +181,11 @@ body{
 .main-block{
     padding: 300px 110px 106px 110px;
     background-image: url("../img/main-bg.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .main-block-title{
-    margin: 0 0 187px 102px;
+    margin: 0 0 150px 102px;
     font-family: 'Storytella', sans-serif;
     font-size: 200px;
     line-height: 200px;
@@ -213,7 +223,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 .block-gallery-link-text{
     position: absolute;
@@ -228,12 +237,11 @@ body{
 
 }
 .block-gallery-link-clean{
-    margin: 0 80px 0 90px;
+    margin: 84px 80px 0 90px;
     max-width: 214px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
-    line-height: 50px;
     font-weight: 900;
     text-transform: uppercase;
     color: #fcdb5a;
@@ -329,9 +337,9 @@ body{
 .block-content-item{
     margin: 0 0 0 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -740,12 +748,13 @@ body{
     margin: 0 0 0 0;
 }
 .footer-nav-link{
+    display: table;
     font-family: 'OpenSans', sans-serif;
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
     color: #aaa;
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
     text-transform: capitalize;
     text-decoration: none;
     outline: none;
@@ -755,7 +764,7 @@ body{
 }
 .footer-nav-link:hover{
     color: #fff;
-    border-bottom: 1px solid #fcdb5a;
+    border-bottom: 2px solid #fcdb5a;
 }
 .footer-nav-link:active{
     opacity: .67;
@@ -768,14 +777,21 @@ body{
 }
 .footer-contact{
     display: flex;
-    justify-content: space-between;
     padding: 70px 0 50px 0;
     margin: 0 0 35px 0;
     box-sizing: border-box;
     align-items: flex-end;
     border-bottom: 1px solid #464646;
 }
-.contact{}
+.contact{
+    margin: 0 75px 0 0;
+    display: flex;
+    flex-direction: column;
+}
+.contact:nth-child(2){
+    margin: 0 0 0 0;
+    flex-grow: 1;
+}
 .contact-link{
     text-decoration: none;
     outline: none;
